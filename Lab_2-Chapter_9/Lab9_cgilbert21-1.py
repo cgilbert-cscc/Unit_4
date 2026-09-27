@@ -21,3 +21,26 @@ def main():
     """Starting Coins."""
     print(f"{player1.get_name()} has {player1.get_wallet()} coins.")
     print(f"{player2.get_name()} has {player2.get_wallet()} coins.")
+
+    choice = input("\nDo you want to toss the coins? (y/n): ")
+
+    while choice.lower() == "y":
+
+        print("\nTossing...")
+
+        player1.toss_coin()
+        player2.toss_coin()
+
+        side1 = player1.get_coin_side()
+        side2 = player2.get_coin_side()
+
+        """Display the results"""
+        print(f"{player1.get_name()} tossed {side1}")
+        print(f"{player2.get_name()} tossed {side2}")
+
+        """Determine the winner."""
+        if side1 == side2:
+            player1.win_coin()
+            player2.lose_coin()
+
+            print("...It's a Match! Player 1 wins a coin.")
