@@ -11,3 +11,13 @@ from player import Player
 
 def main():
     """Run the Coin Match game."""
+
+    player1 = Player("Player 1")
+    player2 = Player("Player 2")
+
+    # Display the title
+    print("--- Coin Match Game ---")
+
+    # Display starting coins
+    print(f"{player1.get_name()} has {player1.get_wallet()} coins.")
+    print(f"{player2.get_name()} has {player2.get_wallet()} coins.")
