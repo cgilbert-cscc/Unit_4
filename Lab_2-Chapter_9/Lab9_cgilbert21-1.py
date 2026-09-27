@@ -43,4 +43,16 @@ def main():
             player1.win_coin()
             player2.lose_coin()
 
-            print("...It's a Match! Player 1 wins a coin.")
+            print("It's a Match! Player 1 wins a coin.")
+
+        else:
+            player2.win_coin()
+            player1.lose_coin()
+
+            print("No Match! Player 2 wins a coin.")
+
+        print()
+        print(f"{player1.get_name()} has {player1.get_wallet()} coins.")
+        print(f"{player2.get_name()} has {player2.get_wallet()} coins.")
+
+        choice = input("\nDo you want to toss the coins? (y/n): ")
