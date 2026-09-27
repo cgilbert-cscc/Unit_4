@@ -1,6 +1,6 @@
 """
 Program: Match Coins
-Author: Your Name
+Author: Claude-henri Gilbert
 Purpose: Run the Coin Match game.
 Starter code: None
 Date: September 27, 2026
@@ -54,3 +54,19 @@ def main():
         print(f"{player2.get_name()} has {player2.get_wallet()} coins.")
 
         choice = input("\nDo you want to toss the coins? (y/n): ")
+
+    print("\n--- Final Score ---")
+    print(f"{player1.get_name()}: {player1.get_wallet()}")
+    print(f"{player2.get_name()}: {player2.get_wallet()}")
+
+    # Determine final result
+    if player1.get_wallet() > player2.get_wallet():
+        print("Player 1 has more coins!")
+    elif player2.get_wallet() > player1.get_wallet():
+        print("Player 2 has more coins!")
+    else:
+        print("It's a draw!")
+
+
+if __name__ == "__main__":
+    main()
