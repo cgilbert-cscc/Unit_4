@@ -32,3 +32,10 @@ class Player:
     def lose_coin(self):
         """Remove one coin from the player's wallet."""
         self.__wallet -= 1
+
+    def get_wallet(self):
+        """Return the player's current number of coins."""
+        return self.__wallet
+
+    def get_name(self):
+        return self.__name
