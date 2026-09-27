@@ -5,6 +5,14 @@ class Restaurant:
         self.name = name.title()
         self.cuisine_type = cuisine_type
 
+     def describe_restaurant(self):
+        """Display a summary of the restaurant."""
+        msg = f"{self.name} serves wonderful {self.cuisine_type}."
+        print(f"\n{msg}")
+
 restaurant = Restaurant('The Mario Bros ', 'Pizza!')
 print(restaurant.name)
 print(restaurant.cuisine_type)
+
+restaurant.describe_restaurant()
+restaurant.open_restaurant()
