@@ -10,3 +10,7 @@ class Restaurant:
         """Display a summary."""
         msg = f"{self.name} serves wonderful {self.cuisine_type}."
         print(f"\n{msg}")
+
+restaurant = Restaurant('the mean queen', 'pizza')
+print(restaurant.name)
+print(restaurant.cuisine_type)
