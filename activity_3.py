@@ -5,3 +5,8 @@ class Restaurant:
         """Initialize the restaurant."""
         self.name = name.title()
         self.cuisine_type = cuisine_type
+
+    def describe_restaurant(self):
+        """Display a summary."""
+        msg = f"{self.name} serves wonderful {self.cuisine_type}."
+        print(f"\n{msg}")
